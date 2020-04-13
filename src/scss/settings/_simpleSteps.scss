@@ -1,0 +1,74 @@
+section.simpleSteps{
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+
+    div.simpleSteps-intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+
+        h1{
+            font-size: 38px;
+            color: $black-ish;
+            font-weight: 500;
+        }
+        img{
+            margin: 25px 0 34px 0;
+        }
+    }
+    div.simpleSteps-icons{
+        background-color: $white-ish;
+        height: 325px;
+        display: flex;
+        justify-content: space-evenly;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h5{
+                margin-top: 10px;
+                font-size: 18px;
+                color: $black-ish;
+                font-weight: normal;
+                max-width: 130px;
+                text-align: center;
+            }
+
+            p.line{
+                width: 70px;
+                border-bottom: 1px solid $grey-ish;
+                margin: 10.5px 0 10.5px 0;
+            }
+
+            p.additional-info{
+                font-size: 16px;
+                color: $black-ish;
+                text-align: center;
+                max-width: 164px;
+            }
+        }
+    }
+
+    div.give-clothes-div{
+        height: 235px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 35px;
+
+        #give-clothes-btn{
+            width: 310px;
+            height: 120px;
+            background: none;
+            border: 0.75px solid $black-ish;
+            color: $black-ish;
+            font-size: 36px;
+            font-weight: lighter;
+        }
+    }
+}
