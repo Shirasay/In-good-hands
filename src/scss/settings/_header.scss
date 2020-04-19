@@ -1,98 +1,59 @@
-header{
+div.header-log-buttons{
+    width: max-content;
+    margin-top: 40px;
+    display: flex;
+                
+    p{
+        margin-right: 20px;
+        padding-top: 9px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .log{
+        padding: 9px 10px;
+        border: none;
+        background: none;
+        color: $grey-ish;
+        text-decoration: none;
+
+    }
+
+    #logout{
+        font-size: 12px;
+    }
+
+    #giveaway{
+        color: $black-ish;
+    }
+
+    #giveaway, #register{
+        font-size: 13px;
+    }
+
+    #login{
+        font-size: 14px;
+    }
+
+    .log:hover{
+        border: 0.75px solid $yellow-ish;
+        padding: 8.25px 9.25px;
+    }
+}
+.header-menu{
     display: flex;
     flex-direction: row;
-    height: 954px;
-
-    #header-div-left{
-        background-image: url(../../assets/Home-Hero-Image.jpg);
-        background-position-x: 100%;
-        background-repeat: no-repeat;
-        overflow: visible;
-        width: 46vw;    
     
+    li{
+        padding: 9px 20px;
+        font-size: 18px;
+        height: 24px;
+        text-decoration: none;
     }
-    #header-div-right{
-        width: 46vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
 
-        div.header-log-buttons{
-            width: max-content;
-            margin-top: 40px;
-            display: flex;
-                        
-
-            #login, #register{
-                padding: 9px 10px;
-                border: none;
-                background: none;
-                color: $grey-ish;
-                font-size: 14px;
-
-            }
-            #login:hover, #register:hover{
-                border: 0.75px solid $yellow-ish;
-                padding: 8.25px 9.25px;
-            }
-        }
-        
-        .header-menu{
-            display: flex;
-            flex-direction: row;
-            
-            li{
-                padding: 9px 20px;
-
-                a{
-                    font-size: 18px;
-                    height: 24px;
-                }
-            
-            }
-            li:hover{
-                border: 0.75px solid $black-ish;
-                padding: 8.25px 19.25px;
-            }
-
-        }
-        .header-intro{
-            display: flex;
-            flex-direction: column;
-            align-self: flex-start;
-            align-items: center;
-            justify-content: center;
-            height: 80%;
-            margin-left: 66px;
-
-            h2{
-                font-size: 38px;
-                text-align: center;
-                letter-spacing: -0.76px;
-                color: $black-ish;
-                font-weight: 700;
-                
-            }
-            img{
-                margin: 25px 0 65px 0;
-            }
-            div.header-collect-buttons{
-                width: 672px;
-                display: flex;
-                justify-content: space-between;
-
-                #give-cloths, #organise-collection{
-                    width: 310px;
-                    height: 120px;
-                    background: none;
-                    border: 0.75px solid $black-ish;
-                    color: $black-ish;
-                    font-size: 36px;
-                    font-weight: lighter;
-                }
-
-            }
-        }
-
+    li:hover{
+        border: 0.75px solid $black-ish;
+        padding: 8.25px 19.25px;
     }
+
 }

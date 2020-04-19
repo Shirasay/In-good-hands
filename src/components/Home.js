@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './Header';
+import Start from './Start';
 import Main from './Main';
 
 const Home=()=>{
 
     return<> 
-      <Header/>
-      <Main/>
+        <Start/>
+        <Main/>
     </>
 }
 

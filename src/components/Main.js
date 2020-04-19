@@ -1,16 +1,9 @@
 import React from 'react';
-/*import {
-    HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink,
-  } from 'react-router-dom';*/
-import YellowStatistics from './Main-yellowStatistics';
-import SimpleSteps from './Main-simpleSteps';
-import AboutUs from './Main-aboutUs';
-import WhoWeHelp from './Main-whoWeHelp';
-import ContactUs from './Main-contactUs.js';
+import YellowStatistics from './Main/YellowStatistics';
+import SimpleSteps from './Main/SimpleSteps';
+import AboutUs from './Main/AboutUs';
+import WhoWeHelp from './Main/WhoWeHelp';
+import ContactUs from './Main/ContactUs.js';
 
 const Main=()=>{
     

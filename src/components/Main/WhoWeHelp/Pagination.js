@@ -30,7 +30,10 @@ const Pagination = ({
             <ul className='pages'>
             {pageNumbers.map(number => (
                 <li key={number} className='page-number'>
-                <a onClick={() => paginate(number)} href='!#' className='page-link'>
+                <a onClick={(e) => {
+                    e.preventDefault()
+                    paginate(number)
+                }} href='!#' className='page-link'>
                     {number}
                 </a>
                 </li>

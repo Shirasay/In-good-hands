@@ -1,9 +1,10 @@
 import React from 'react';
-import decoration from '../assets/Decoration.svg';
-import icon1 from '../assets/Icon-1.svg';
-import icon2 from '../assets/Icon-2.svg';
-import icon3 from '../assets/Icon-3.svg';
-import icon4 from '../assets/Icon-4.svg';
+import { NavLink } from 'react-router-dom';
+import decoration from '../../assets/Decoration.svg';
+import icon1 from '../../assets/Icon-1.svg';
+import icon2 from '../../assets/Icon-2.svg';
+import icon3 from '../../assets/Icon-3.svg';
+import icon4 from '../../assets/Icon-4.svg';
 
 const SimpleSteps=()=>{
 
@@ -42,7 +43,7 @@ const SimpleSteps=()=>{
                 </div>
             </div>
             <div className='give-clothes-div'>
-                <button id='give-clothes-btn'>ODDAJ<br/>RZECZY</button>
+                <NavLink to="/logowanie"><button id='give-clothes-btn'>ODDAJ<br/>RZECZY</button></NavLink>
             </div>
         </section>
     </>

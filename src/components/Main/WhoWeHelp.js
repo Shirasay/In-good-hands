@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
-import decoration from '../assets/Decoration.svg';
-import WhoWeHelpComponents from './whoWeHelp-components';
-import Pagination from './Pagination';
+import decoration from '../../assets/Decoration.svg';
+import WhoWeHelpComponents from './WhoWeHelp/WhoWeHelpComponents';
+import Pagination from './WhoWeHelp/Pagination';
 
 const WhoWeHelp=()=>{
     const [list, setList] = useState('fundations');
@@ -21,7 +21,6 @@ const WhoWeHelp=()=>{
         fetch("http://localhost:3001/WeHelp")
             .then(res => res.json())
             .then(data=>{
-                console.log(data);
                 setFundations(data[0].items);
                 setOrganisations(data[1].items);
                 setCollections(data[2].items)

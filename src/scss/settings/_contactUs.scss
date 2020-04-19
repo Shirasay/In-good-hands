@@ -5,8 +5,8 @@ section.contactUs {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    
-    nav{
+
+    nav {
         height: 100%;
         display: flex;
         justify-content: flex-end;
@@ -26,7 +26,17 @@ section.contactUs {
             }
 
             img {
-                margin: 23px 0 70px 0;
+                margin-top: 23px;
+            }
+
+            p {
+                font-weight: 600;
+                color: rgb(4, 163, 4);
+                text-align: center;
+                width: 260px;
+                line-height: 22px;
+                margin: 24px 0 24px 0;
+
             }
 
             form {
@@ -47,12 +57,24 @@ section.contactUs {
                     margin-bottom: 40px;
 
                     div {
+                        width: 256px;
 
                         input {
                             width: 256px;
                             border: none;
                             border-bottom: 1px solid silver;
+                            background: none;
 
+                        }
+
+                        .error {
+                            border-bottom: 1px solid red;
+                        }
+
+                        small {
+                            font-size: 10px;
+                            font-weight: bold;
+                            color: red;
                         }
                     }
                 }
@@ -69,8 +91,21 @@ section.contactUs {
                     overflow: auto;
                     min-height: 100px;
                     height: max-content;
-
+                    margin-bottom: 7px;
+                    background: none;
                 }
+
+                .error {
+                    border-bottom: 1px solid red;
+                }
+
+                small {
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: red;
+                }
+
+
             }
 
             div.contactUs-btn-holder {
@@ -90,32 +125,33 @@ section.contactUs {
             }
         }
     }
-    footer{
+
+    footer {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         width: 100vw;
 
-        section{
+        section {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: calc(50vw + 99px);
             margin-bottom: 19px;
 
-            small{
+            small {
                 font-size: 18px;
                 line-height: 24px;
             }
-            
-            div{
+
+            div {
                 width: 80px;
                 display: flex;
                 justify-content: space-between;
                 margin-right: 142px;
             }
         }
-    
-        
+
+
     }
 }

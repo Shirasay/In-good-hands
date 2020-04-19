@@ -9,11 +9,11 @@ if(list==='fundations'){
                     <div className='fundationList'>
                         {fundations.map((el,i)=>{
                             return(<>
-                                    <div key={i} className='all-collections'>
-                                        <div>
-                                            <h1>Fundacja “{el.header}”</h1>
-                                            <small>{el.subheader}</small>
-                                        </div>
+                                <div key={i} className='all-collections'>
+                                    <div>
+                                        <h1>Fundacja “{el.header}”</h1>
+                                        <small>{el.subheader}</small>
+                                    </div>
                                     <p>Cel i misja: {el.desc}.</p>
                                 </div>
                             </>)
@@ -30,11 +30,11 @@ if(list==='fundations'){
                         <div className='organisationsList'>
                         {organisations.map((el,i)=>{
                             return(<>
-                                    <div key={i} className='all-collections'>
-                                        <div>
-                                            <h1>Organizacja “{el.header}”</h1>
-                                            <small>{el.subheader}</small>
-                                        </div>
+                                <div key={i} className='all-collections'>
+                                    <div>
+                                        <h1>Organizacja “{el.header}”</h1>
+                                        <small>{el.subheader}</small>
+                                    </div>
                                     <p>Cel i misja: {el.desc}.</p>
                                 </div>
                             </>)
@@ -51,11 +51,11 @@ if(list==='fundations'){
                         <div className='collectionsList'>
                         {collections.map((el,i)=>{
                             return(<>
-                                    <div key={i} className='all-collections'>
-                                        <div>
-                                            <h1>Zbiórka “{el.header}”</h1>
-                                            <small>{el.subheader}</small>
-                                        </div>
+                                <div key={i} className='all-collections'>
+                                    <div>
+                                        <h1>Zbiórka “{el.header}”</h1>
+                                        <small>{el.subheader}</small>
+                                    </div>
                                     <p>Cel i misja: {el.desc}.</p>
                                 </div>
                             </>)
