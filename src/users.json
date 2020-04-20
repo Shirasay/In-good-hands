@@ -4,8 +4,8 @@
       "email": "test@test.test",
       "password": "testtesttest",
       "data": {
-        "supported": 0,
-        "bags": 0
+        "supported": 1,
+        "bags": 4
       },
       "id": 1
     }

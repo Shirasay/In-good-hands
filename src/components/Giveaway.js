@@ -1,4 +1,4 @@
-import React,{ useState, useContext } from 'react';
+import React,{ useContext } from 'react';
 import decoration from '../assets/Decoration.svg';
 import Header from './Header';
 import ContactUs from './Main/ContactUs';

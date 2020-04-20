@@ -1,4 +1,4 @@
-import React,{ useState, useContext, useEffect } from 'react';
+import React,{ useContext, useEffect } from 'react';
 import axios from 'axios';
 import icon1 from '../../assets/Icon-1.svg';
 import icon4 from '../../assets/Icon-4.svg';
@@ -39,7 +39,6 @@ const PageSummary=()=>{
     }
 
     const handlePage=()=>{
-        console.log(bags, supported)
         axios.patch(`http://localhost:3004/Users/${saveData}/`,{
             data
         })

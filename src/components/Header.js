@@ -9,7 +9,7 @@ const Header=()=>{
     
     const [user, setUser] = useState();
     const { isLoggedIn, setIsLoggedIn, api, setApi } = useContext(LoginContext);
-    const { setSaveData, setBags, setSupported, setPage } = useContext(FormContext);
+    const { setSaveData, setPage } = useContext(FormContext);
 
     useEffect(() => {
         axios.get(api,{
