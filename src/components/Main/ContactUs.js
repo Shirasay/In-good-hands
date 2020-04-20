@@ -41,7 +41,7 @@ const ContactUs=()=>{
         setMessage('');
     }
 
-    const API = `http://localhost:3002/ContactUs`
+    // const API = `http://localhost:3002/ContactUs`;
 
     const sendForm = () => {   
         if (name.length < 3 || name.includes(' ')){
@@ -65,9 +65,9 @@ const ContactUs=()=>{
             setErrmsg('');
             setWrongMsg('');
         }
-        if(![...name].includes(' ') && mail.includes("@") && message.length >= 120){
+        if(validateEmail(mail)){
             handleSubmit();
-                axios.post(`${API}`,{
+                axios.post(`http://localhost:3002/ContactUs`,{
                     contact
                 }, {
                     withCredentials: false 
@@ -75,7 +75,6 @@ const ContactUs=()=>{
                 .then(response=> {
                     console.log(response);
                     console.log(contact);
-                    console.log(API)
                 })
                     .catch(error => {
                       console.log(error);

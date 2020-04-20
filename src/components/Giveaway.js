@@ -7,14 +7,17 @@ import PageTwo from './Giveaway/PageTwo';
 import PageThree from './Giveaway/PageThree';
 import PageFour from './Giveaway/PageFour';
 import PageSummary from './Giveaway/PageSummary';
+import Login from './Login';
 import { FormContext } from './FormContext';
+import { LoginContext } from './LoginContext';
 
 const GiveAway=()=>{
     
     const { page } = useContext(FormContext);
-
+    const { isLoggedIn } = useContext(LoginContext);
+    
     return<>
-        <section className='giveaway'>
+        {isLoggedIn && <section className='giveaway'>
                 <div className='left-giveaway'>
                 </div>
                 <div className='right-giveaway'>
@@ -53,8 +56,8 @@ const GiveAway=()=>{
                         </div>
                     </div>
                 </div>
-        </section>
-        <section className='giveaway-form-section'>
+        </section>}
+        {isLoggedIn ? <section className='giveaway-form-section'>
             {page==='' && <PageOne/>}
             {page==='two' && <PageTwo/>}
             {page==='three' && <PageThree/>}
@@ -66,8 +69,8 @@ const GiveAway=()=>{
                     <img src={decoration}/>
                 </div>
             </div>}
-        </section>
-        <ContactUs/>
+        </section> : <Login/>}
+        {isLoggedIn && <ContactUs/>}
     </>
 }
 

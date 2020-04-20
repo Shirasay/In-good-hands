@@ -20,18 +20,23 @@ function App() {
   const [pageFour, setPageFour] = useState([]);
   const [page, setPage] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [api, setApi] = useState('');  
+  const [api, setApi] = useState('');
+  const [saveData, setSaveData] = useState('');
+  const [bags, setBags] = useState('');
+  const [supported, setSupported] = useState('');
 
   return <HashRouter>
   <>
     <Switch>
-      <FormContext.Provider value={{page, setPage, pageOne, setPageOne, pageTwo, setPageTwo, pageThree, setPageThree, pageFour, setPageFour}}>
+      <FormContext.Provider value={{supported, setSupported, 
+        bags, setBags, page, setPage, pageOne, setPageOne, pageTwo, 
+        setPageTwo, pageThree, setPageThree, pageFour, setPageFour , saveData, setSaveData}}>
         <LoginContext.Provider value={{ isLoggedIn, setIsLoggedIn, api, setApi }}>
-          {/* <Route exact path='/' component={Home}/>oddaj-rzeczy */}
+          <Route exact path='/' component={Home}/>
           <Route path='/logowanie' component={Login}/>
           <Route path='/rejestracja' component={Registration}/>
           <Route path='/wylogowano' component={Logout}/>
-          <Route path='/' component={Giveaway}/>
+          <Route path='/oddaj-rzeczy' component={Giveaway}/>
         </LoginContext.Provider>      
       </FormContext.Provider>
     </Switch>

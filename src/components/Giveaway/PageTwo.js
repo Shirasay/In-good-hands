@@ -26,12 +26,7 @@ const PageTwo=()=>{
 
     const handlePage=(e)=>{
         e.preventDefault();
-        
-        if(selected===1){
-            setPageTwo(`${selected} worek`)
-        }else{
-            setPageTwo(`${selected} worki`);
-        }
+        setPageTwo(selected)
         setPage('three')
     }
 

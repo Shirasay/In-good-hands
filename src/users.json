@@ -3,7 +3,10 @@
     {
       "email": "test@test.test",
       "password": "testtesttest",
-      "data": {},
+      "data": {
+        "supported": 0,
+        "bags": 0
+      },
       "id": 1
     }
   ]

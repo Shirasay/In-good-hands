@@ -1,14 +1,54 @@
-import React,{ useState, useContext } from 'react';
+import React,{ useState, useContext, useEffect } from 'react';
+import axios from 'axios';
 import icon1 from '../../assets/Icon-1.svg';
 import icon4 from '../../assets/Icon-4.svg';
 import { FormContext } from '../FormContext';
+import { LoginContext } from '../LoginContext';
 
 const PageSummary=()=>{
 
-    const { pageOne, pageTwo, pageThree, pageFour, setPage } = useContext(FormContext);
+    const { pageOne, pageTwo, pageThree, pageFour, page, setPage, saveData, supported, setSupported, bags, setBags } = useContext(FormContext);
+    const { api } = useContext(LoginContext);
+
+    useEffect(() => {
+        axios.get(api,{
+        })
+        .then(response=> {
+            setBags(response.data[0].data.bags)
+            setBags(PrevState=>PrevState+pageTwo)
+            setSupported(response.data[0].data.supported)
+            setSupported(PrevState=>PrevState+1)
+        })
+            .catch(error => {
+              console.log(error);
+            });
+    }, [page])
+
+    console.log(pageTwo);
+    let data = {
+        supported: supported,
+        bags: bags
+    };
+
+    let collectedBags = 0;
+
+    if(pageTwo===1){
+        collectedBags = `${pageTwo} worek`;
+    }else{
+        collectedBags = `${pageTwo} worki`;
+    }
 
     const handlePage=()=>{
-        
+        console.log(bags, supported)
+        axios.patch(`http://localhost:3004/Users/${saveData}/`,{
+            data
+        })
+        .then(response=> {
+            console.log(response);
+        })
+            .catch(error => {
+              console.log(error);
+            }); 
         setPage('done');
     }
 
@@ -21,7 +61,7 @@ const PageSummary=()=>{
                         <h5>Oddajesz:</h5>
                         <div>                       
                             <img src={icon1}/>
-                            <p>{pageTwo}, {pageOne.join(' ')}, {(pageThree.slice(1)).join(' ')}</p>
+                            <p>{collectedBags}, {pageOne.join(' ')}, {(pageThree.slice(1)).join(' ')}</p>
                         </div>
                         <div>
                             <img src={icon4}/>

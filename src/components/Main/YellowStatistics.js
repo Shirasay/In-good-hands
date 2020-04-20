@@ -1,24 +1,38 @@
-import React,{useState} from 'react';
+import React,{useContext, useEffect} from 'react';
+import axios from 'axios';
+import { FormContext } from '../FormContext';
+import { LoginContext } from '../LoginContext';
 
 const YellowStatistics=()=>{
-    const[bags, setBags]=useState(0)
-    const[organisations, setOrganisations]=useState(0)
-    const[collections, setcollections]=useState(0)
 
+    const { bags, supported, setBags, setSupported } = useContext(FormContext);
+    const { api, isLoggedIn } = useContext(LoginContext);
+    
+    useEffect(() => {
+        axios.get(api,{
+        })
+        .then(response=> {
+            setBags(response.data[0].data.bags)
+            setSupported(response.data[0].data.supported)
+        })
+            .catch(error => {
+              console.log(error);
+            });
+    }, [isLoggedIn])
     return<>
         <section className='yellowStatistic'>
             <div className='given-bags'>
-                <h1>{bags}</h1>
+                {bags ? <h1>{bags}</h1> : <h1>0</h1> }
                 <h6>ODDANYCH WORKÓW</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
             </div>
             <div className='supported-organisations'>
-                <h1>{organisations}</h1>
+                {supported ? <h1>{supported}</h1> : <h1>0</h1> }
                 <h6>WSPARTYCH ORGANIZACJI</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
             </div>
             <div className='organised-collections'>
-                <h1>{collections}</h1>
+                <h1>0</h1>
                 <h6>ZORGANIZOWANY ZBIÓREK</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
             </div>

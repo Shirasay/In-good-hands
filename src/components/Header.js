@@ -3,19 +3,20 @@ import axios from 'axios';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import { LoginContext } from './LoginContext';
+import { FormContext } from './FormContext';
 
 const Header=()=>{
     
     const [user, setUser] = useState();
-    const { isLoggedIn, setIsLoggedIn } = useContext(LoginContext);
-    const { api, setApi } = useContext(LoginContext);
-    
+    const { isLoggedIn, setIsLoggedIn, api, setApi } = useContext(LoginContext);
+    const { setSaveData, setBags, setSupported, setPage } = useContext(FormContext);
+
     useEffect(() => {
         axios.get(api,{
         })
         .then(response=> {
-            console.log(response);
-            setUser(response.data[0].email)          
+            setUser(response.data[0].email)
+            setSaveData(response.data[0].id)
         })
             .catch(error => {
               console.log(error);
@@ -34,7 +35,7 @@ const Header=()=>{
             <NavLink to="/rejestracja"><button id='register' className='log'>Załóż konto</button></NavLink>
         </> : <>
             <p>Cześć {user}!</p>
-            <NavLink to='/oddaj-rzeczy'><button id='giveaway' className='log loggedin'>Oddaj rzeczy</button></NavLink>
+            <NavLink to='/oddaj-rzeczy'><button id='giveaway' onClick={()=>setPage('')} className='log loggedin'>Oddaj rzeczy</button></NavLink>
             <NavLink to='/wylogowano'><button id='logout' onClick={handleLogOut} className='log loggedin'>Wyloguj</button></NavLink>
         </>}
         </div>
