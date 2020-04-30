@@ -1,0 +1,544 @@
+section.giveaway {
+    display: flex;
+    height: 853px;
+
+    div.left-giveaway {
+        width: 1015px;
+        height: 853px;
+        background: url(../../assets/Form-Hero-Image.jpg);
+        background-repeat: no-repeat;
+    }
+
+    div.right-giveaway {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: calc(100vw - 1015px);
+        height: 100%;
+        margin-right: 142px;
+
+        div.giveaway-header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+        }
+
+        div.giveaway-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 670px;
+            margin-bottom: 142px;
+
+            h1 {
+                font-size: 38px;
+                font-weight: normal;
+                line-height: 55px;
+                text-align: center;
+            }
+
+            img {
+                margin: 25px 0 19px 0;
+            }
+
+            h2 {
+                font-size: 40px;
+                margin-bottom: 26px;
+            }
+
+            div.four-squares {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: inherit;
+                height: 190px;
+
+                div {
+                    display: block;
+                    transform: rotate(45deg);
+                    margin: 0 10px;
+                    width: 132px;
+                    height: 132px;
+                    border: .75px solid $black-ish;
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        height: 110px;
+                        width: 110px;
+                        transform: rotate(-45deg);
+
+                        h5 {
+                            font-size: 32px;
+                        }
+
+                        h6 {
+                            font-size: 22px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+section.giveaway-form-section {
+    height: fit-content;
+
+    div.form-header {
+        height: 179px;
+        background-color: $yellow-ish;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            color: black;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 141px;
+        }
+
+        p {
+            color: black;
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 30px;
+            margin-left: 141px;
+        }
+    }
+
+    div.giveaway-form {
+        height: 883px;
+        background-image: url(../../assets/Background-Form.jpg);
+        display: flex;
+        flex-direction: column;
+        padding-left: 142px;
+        justify-content: space-between;
+
+        h5 {
+            font-size: 24px;
+            line-height: 27px;
+            margin-top: 36px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 45px;
+        }
+
+        button.select {
+            width: 300px;
+            height: 49px;
+            background: none;
+            appearance: none;
+            background: url(../../assets/Icon-Arrow-Down.svg) no-repeat 100% center;
+            border: .75px solid $black-ish;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        button.selected {
+            width: 300px;
+            height: 49px;
+            background: none;
+            appearance: none;
+            background: url(../../assets/Icon-Arrow-Up.svg) no-repeat 100% center;
+            border: .75px solid $black-ish;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        ul.unactive {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: .75px solid $black-ish;
+            position: absolute;
+
+            li {
+                font-size: 24px;
+                color: black;
+                width: 100%;
+            }
+
+            li:hover {
+                background: $yellow-ish;
+            }
+        }
+
+        div.buttons-nav {
+            width: 410px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            button {
+                width: 180px;
+                height: 79px;
+                border: .75px solid $black-ish;
+                background: none;
+                font-size: 24px;
+            }
+
+        }
+    }
+//-----------------------PAGE ONE------------------------------------------------------------------------------------------
+    div.page-one {
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 368px;
+            margin-bottom: 70px;
+
+            div {
+                display: flex;
+
+                input{
+                    appearance: none;
+                    height: 40px;
+                    border: 0.75px solid $black-ish;
+                    width: 40px;
+                    margin-right: 30px;
+                }
+                input:checked{
+                    background: $yellow-ish;
+                }
+
+                p {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 5px;
+                }
+            }
+
+
+        }
+
+        button.btn {
+            width: 180px;
+            height: 79px;
+            border: .75px solid $black-ish;
+            background: none;
+            font-size: 24px;
+            margin-bottom: 50px;
+
+        }
+
+
+    }
+//------------------PAGE TWO-----------------------------------------------------------------------------------------------
+    div.page-two {
+
+        div.bag-quantity {
+            height: 500px;
+            position: relative;
+
+            div {
+                display: flex;
+                margin-top: 57px;
+                width: fit-content;
+
+                p {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-right: 26px;
+                    padding-top: 7px;
+                }
+
+            }
+
+            ul {
+                width: 86px;
+                height: 185px;
+                margin: 15px 0 0 428px;
+
+                li {
+                    text-align: center;
+                    line-height: 36px;
+                    margin-top: 1px;
+                }
+
+                li:hover {
+                    background: $yellow-ish;
+                }
+            }
+
+        }
+    }
+//------------------PAGE THREE---------------------------------------------------------------------------------------------
+    div.page-three {
+
+        div.page-three-container {
+            height: 680px;
+
+            h2 {
+                margin: 70px 0 20px 0;
+            }
+
+            button.select {
+                width: 300px;
+                height: 49px;
+                background: none;
+                appearance: none;
+                background: url(../../assets/Icon-Arrow-Down.svg) no-repeat 100% center;
+                border: .75px solid $black-ish;
+                text-align: left;
+                padding-left: 20px;
+                font-size: 16px;
+            }
+    
+            button.selected {
+                width: 300px;
+                height: 49px;
+                background: none;
+                appearance: none;
+                background: url(../../assets/Icon-Arrow-Up.svg) no-repeat 100% center;
+                border: .75px solid $black-ish;
+                text-align: left;
+                padding-left: 20px;
+                font-size: 16px;
+            }
+
+            ul {
+                width: 298px;
+                height: 185px;
+                margin-top: 15px;
+                background: #E8E9E4;
+
+                li {
+                    width: 298px;
+                    line-height: 36px;
+                    margin-top: 1px;
+                }
+            }
+
+            h5 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            h5:last-of-type {
+                margin-top: 57px;
+            }
+            
+            button {
+                border: 0.75px solid $black-ish;
+                background: none;
+                font-size: 24px;
+                height: 55px;
+            }
+
+            button.checked{
+                background: $yellow-ish !important;
+            }
+
+            div.btn-whoToHelp {
+                margin-top: 20px;
+                width: 634px;
+
+                div.top-btn {
+                    display: flex;
+                    justify-content: space-between;
+
+                    button.first-btn {
+                        width: 148px;
+                    }
+
+                    button.second-btn {
+                        width: 263px;
+                    }
+
+                    button.third-btn {
+                        width: 175px;
+                    }
+                }
+
+                div.bottom-btn {
+                    margin-top: 24px;
+
+                    button {
+                        width: 245px;
+                        margin-right: 25px;
+                    }
+                }
+            }
+
+            input {
+                width: 590px;
+                height: 40px;
+                margin-top: 20px;
+                background: none;
+                border: .75px solid $black-ish;
+
+            }
+        }
+    }
+//------------------PAGE FOUR----------------------------------------------------------------------------------------------
+    h2 {
+        margin-top: 70px;
+    }
+
+    div.page-four-container {
+        height: 680px;
+        width: fit-content;
+        display: flex;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 392px;
+
+            h5 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 50px;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+                width: 100%;
+                font-size: 24px;
+
+                input {
+                    width: 256px;
+                    height: 40px;
+                    background: none;
+                    border: .75px solid $black-ish;
+                }
+            }
+        }
+
+        form:last-of-type {
+            margin-left: 152px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                h5 {
+                    font-weight: lighter;
+                    margin: 0;
+                }
+
+                textarea {
+                    width: 252px;
+                    height: 120px;
+                    resize: none;
+                    background: none;
+                    border: .75px solid $black-ish;
+                }
+            }
+        }
+
+    }
+//------------------PAGE SUMMARY-------------------------------------------------------------------------------------------
+    div.giveaway-form-summary {
+        display: flex;
+        flex-direction: column;
+        height: 620px;
+        margin-top: 20px;
+
+        div.items-summary {
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 20px;
+                }
+
+                p {
+                    font-size: 24px;
+                    font-weight: normal;
+                }
+
+            }
+        }
+
+        div.address-summary {
+            display: flex;
+
+            article{
+                
+                h5{
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                div{
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        width: 136px;
+                        margin-bottom: 20px;
+                        font-size: 24px;
+                        color: black;
+                        line-height: 32px;
+                    }
+                }
+            }
+
+            article:first-of-type{
+                margin-right: 230px;
+            }
+
+        }
+    }
+//------------------PAGE END-----------------------------------------------------------------------------------------------
+    div.thanks{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 152px;
+
+            h1{
+                font-size: 40px;
+                line-height: 55px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

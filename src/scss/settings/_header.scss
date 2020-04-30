@@ -1,0 +1,59 @@
+div.header-log-buttons{
+    width: max-content;
+    margin-top: 40px;
+    display: flex;
+                
+    p{
+        margin-right: 20px;
+        padding-top: 9px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .log{
+        padding: 9px 10px;
+        border: none;
+        background: none;
+        color: $grey-ish;
+        text-decoration: none;
+
+    }
+
+    #logout{
+        font-size: 12px;
+    }
+
+    #giveaway{
+        color: $black-ish;
+    }
+
+    #giveaway, #register{
+        font-size: 13px;
+    }
+
+    #login{
+        font-size: 14px;
+    }
+
+    .log:hover{
+        border: 0.75px solid $yellow-ish;
+        padding: 8.25px 9.25px;
+    }
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    
+    li{
+        padding: 9px 20px;
+        font-size: 18px;
+        height: 24px;
+        text-decoration: none;
+    }
+
+    li:hover{
+        border: 0.75px solid $black-ish;
+        padding: 8.25px 19.25px;
+    }
+
+}

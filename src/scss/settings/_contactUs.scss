@@ -1,0 +1,157 @@
+section.contactUs {
+    height: 1026px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)), url(../../assets/Background-Contact-Form.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    nav {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        div.contactUs-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 142px;
+
+            h1 {
+                font-size: 38px;
+                line-height: 55px;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            img {
+                margin-top: 23px;
+            }
+
+            p {
+                font-weight: 600;
+                color: rgb(4, 163, 4);
+                text-align: center;
+                width: 260px;
+                line-height: 22px;
+                margin: 24px 0 24px 0;
+
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 530px;
+
+                ::placeholder {
+                    color: rgb(224, 221, 221);
+                    font-size: 18px;
+                    font-family: $font-base;
+                }
+
+                div.contact-info {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 40px;
+
+                    div {
+                        width: 256px;
+
+                        input {
+                            width: 256px;
+                            border: none;
+                            border-bottom: 1px solid silver;
+                            background: none;
+
+                        }
+
+                        .error {
+                            border-bottom: 1px solid red;
+                        }
+
+                        small {
+                            font-size: 10px;
+                            font-weight: bold;
+                            color: red;
+                        }
+                    }
+                }
+
+                h6 {
+                    font-weight: normal;
+                    margin-bottom: 12px;
+                }
+
+                textarea {
+                    border: none;
+                    border-bottom: 1px solid silver;
+                    resize: none;
+                    overflow: auto;
+                    min-height: 100px;
+                    height: max-content;
+                    margin-bottom: 7px;
+                    background: none;
+                }
+
+                .error {
+                    border-bottom: 1px solid red;
+                }
+
+                small {
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: red;
+                }
+
+
+            }
+
+            div.contactUs-btn-holder {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 44px;
+
+                button {
+                    width: 150px;
+                    height: 50px;
+                    border: 0.75px solid $black-ish;
+                    background: none;
+                    box-shadow: none;
+                    color: $black-ish;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100vw;
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(50vw + 99px);
+            margin-bottom: 19px;
+
+            small {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            div {
+                width: 80px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 142px;
+            }
+        }
+
+
+    }
+}
