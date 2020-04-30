@@ -11,7 +11,7 @@ const YellowStatistics=()=>{
     useEffect(() => {
         axios.get(api,{
         })
-        .then(response=> {
+        .then(response=> { 
             setBags(response.data[0].data.bags)
             setSupported(response.data[0].data.supported)
         })

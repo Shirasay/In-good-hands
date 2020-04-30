@@ -18,7 +18,7 @@ const Pagination = ({
         totalDivs = totalCollectionsDivs;
     }
     for (let i = 1; i <= Math.ceil(totalDivs / divPerPage); i++) {
-        pageNumbers.push(i);
+        pageNumbers.push(i); 
     }
 
     if(totalDivs<=3){

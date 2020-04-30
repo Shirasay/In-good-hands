@@ -13,7 +13,7 @@ const WhoWeHelp=()=>{
     const [divPerPage] = useState(3);
 
     const handleCollectionButtons=(value)=>{
-        setList(value);
+        setList(value); 
         setCurrentPage(1);
     }
 

@@ -11,7 +11,7 @@ import Logout from './components/Logout';
 import Giveaway from './components/Giveaway';
 import { LoginContext } from './components/LoginContext';
 import { FormContext } from './components/FormContext';
-
+ 
 function App() {
 
   const [pageOne, setPageOne] = useState([]);

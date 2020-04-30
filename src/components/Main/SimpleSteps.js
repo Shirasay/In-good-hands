@@ -12,7 +12,7 @@ const SimpleSteps=()=>{
 
     const { setPage } = useContext(FormContext);
     const { isLoggedIn } = useContext(LoginContext);
-
+ 
     return<>
         <section className='simpleSteps container' id='simpleSteps'>
             <div className='simpleSteps-intro'>

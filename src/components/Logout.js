@@ -18,7 +18,7 @@ const Logout=()=>{
                 </div>
             </div>
         </section>
-    </>   
+    </>    
 }
 
 export default Logout;

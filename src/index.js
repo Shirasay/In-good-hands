@@ -5,7 +5,7 @@ import "./scss/main.scss"
 const InGoodHands=()=>{
   return <App/>
 }
-
+ 
 ReactDOM.render(
   <InGoodHands/>,
   document.getElementById('body')

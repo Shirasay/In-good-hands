@@ -19,7 +19,7 @@ const PageFour=()=>{
     }
 
     return<>
-        <div id='page-four'>
+        <div id='page-four'> 
             <div className='form-header page-four'>
                 <h2>Ważne!</h2>
                 <p>Podaj adres oraz termin odbioru rzeczy.</p>

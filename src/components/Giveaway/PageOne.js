@@ -20,7 +20,7 @@ const PageOne=()=>{
             setBadClothes('ubrania do wyrzucenia')
         }else if (value==='badClothes' && badClothes!==''){
             setBadClothes('')
-        }
+        } 
         if(value==='toys' && toys===''){
             setToys('zabawki')
         }else if (value==='toys' && toys!==''){

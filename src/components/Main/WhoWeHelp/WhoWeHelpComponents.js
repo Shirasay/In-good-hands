@@ -18,7 +18,7 @@ if(list==='fundations'){
                                 </div>
                             </>)
                         })}
-                    </div>
+                    </div> 
                 </div>
             </nav>
         </>

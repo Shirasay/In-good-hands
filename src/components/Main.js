@@ -18,7 +18,7 @@ const Main=()=>{
         <WhoWeHelp/>
         <ContactUs/>
     </nav>
-    </>
+    </> 
 }
 
 export default Main;

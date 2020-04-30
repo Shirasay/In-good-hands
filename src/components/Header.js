@@ -14,7 +14,7 @@ const Header=()=>{
     useEffect(() => {
         axios.get(api,{
         })
-        .then(response=> {
+        .then(response=> { 
             setUser(response.data[0].email)
             setSaveData(response.data[0].id)
         })

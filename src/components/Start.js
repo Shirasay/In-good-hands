@@ -15,7 +15,7 @@ const Start=()=>{
             <div id='header-div-left'>
             </div>
             <div id='header-div-right'>
-               <Header/>
+               <Header/> 
                 <div className='header-intro'>
                     <h2>Zacznij pomagać!<br/>Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <img src={decoration} alt='decoration'/>

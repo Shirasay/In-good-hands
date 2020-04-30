@@ -10,7 +10,7 @@ import PageSummary from './Giveaway/PageSummary';
 import Login from './Login';
 import { FormContext } from './FormContext';
 import { LoginContext } from './LoginContext';
-
+ 
 const GiveAway=()=>{
     
     const { page } = useContext(FormContext);

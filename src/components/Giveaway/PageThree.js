@@ -19,7 +19,7 @@ const PageThree=()=>{
         setPageThree([selectedCity,btnKid,btnMother,btnHomeless,btnDisable,btnOld,organisation])
         setPage('four')
     }
-
+ 
     const handeOnClick=()=>{
         if(active==='unactive'){
             setActive('');

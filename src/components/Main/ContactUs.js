@@ -16,7 +16,7 @@ const ContactUs=()=>{
     const [wrongname,setWrongName] = useState('');
     const [wrongmail,setWrongMail] = useState('');
     const [wrongmsg,setWrongMsg] = useState('');
-
+ 
     const contact = {
         name: name,
         email: mail,

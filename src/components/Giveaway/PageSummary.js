@@ -19,7 +19,7 @@ const PageSummary=()=>{
             setSupported(response.data[0].data.supported)
             setSupported(PrevState=>PrevState+1)
         })
-            .catch(error => {
+            .catch(error => { 
               console.log(error);
             });
     }, [page])

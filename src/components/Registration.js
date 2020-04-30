@@ -18,7 +18,7 @@ const Registration=()=>{
     const [passValWarning, setPassValWarning] = useState('');
     const { setIsLoggedIn } = useContext(LoginContext);
     const { setApi } = useContext(LoginContext);
-    
+     
     const history = useHistory();
 
     const API = 'http://localhost:3004/Users';

@@ -18,7 +18,7 @@ const PageTwo=()=>{
         }
     }
 
-    const handleSelected=(value)=>{
+    const handleSelected=(value)=>{ 
         setSelected(value)
         setActive('unactive');
         setSelect('select');

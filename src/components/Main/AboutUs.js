@@ -15,6 +15,6 @@ const AboutUs=()=>{
             </div>
             <div className='aboutUs-peopleBackground'></div>
         </section>
-    </>
+    </> 
 }
 export default AboutUs;
